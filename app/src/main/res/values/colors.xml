@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#06904E</color>
+    <color name="grass">#82d700</color>
+    <color name="cleanness">#00000000</color>
+    <color name="button">#dfdfdf</color>
+    <color name="defaultText">#888888</color>
+    <color name="darkGray">#282828</color>
+    <color name="red">#FFFF0000</color>
+    <color name="g">#00ff00</color>
+    <color name="b">#0000ff</color>
+    <color name="gameOverArea">#ffff6b8c</color>
+    <color name="down">#44B9C8</color>
+    <color name="border">#3FBCEB</color>
+
+</resources>

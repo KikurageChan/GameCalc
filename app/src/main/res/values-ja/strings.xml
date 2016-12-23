@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">GameCalc</string>
+    <string name="title_activity_memory_">Memory_Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_setting">activity_setting</string>
+    <!--MemoryActivity-->
+    <string name="found_game">発見したゲーム</string>
+    <string name="card">Card</string>
+    <string name="arrow">Arrow</string>
+    <string name="block">Block</string>
+    <string name="draw">Draw</string>
+    <string name="high_score">ハイスコア</string>
+    <!--SettingActivity-->
+    <string name="assist">電卓のアシスト</string>
+    <string name="assist_text_color">アシストの文字色</string>
+
+    <string name="main_color">メインの色</string>
+    <string name="screen_color">画面の色</string>
+    <string name="calculation_text_color">文字色</string>
+    <string name="sound">サウンド</string>
+    <string name="button_color">ボタンの色</string>
+    <string name="button_text_color">ボタンの文字色</string>
+    <!--Calculation-->
+    <string name="pass_error">パスコードが違います</string>
+    <string name="saved">設定を保存しました</string>
+    <string name="playing_game">ゲーム中です!</string>
+    <!--adMob-->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <!--Test:ca-app-pub-3940256099942544/6300978111-->
+    <!--real:ca-app-pub-1031526194855287/3624121457-->
+    <!--apple-->
+    <string name="through_cnt">よけた本数:</string>
+    <!--draw-->
+    <string name="thickness">太さ</string>
+    <string name="color">色 :</string>
+    <string name="dotted">点線 :</string>
+    <string name="black">ブラック</string>
+    <string name="dark_gray">ダーク グレイ</string>
+    <string name="light_gray">ライト グレイ</string>
+    <string name="yellow">イエロー</string>
+    <string name="orange">オレンジ</string>
+    <string name="red">レッド</string>
+    <string name="blue">ブルー</string>
+    <string name="green">グリーン</string>
+    <string name="pink">ピンク</string>
+    <string name="random">ランダム</string>
+    <string name="eraser">消しゴム</string>
+    <string name="dotOn">オン</string>
+    <string name="dotOff">オフ</string>
+    <string name="fill">塗りつぶし</string>
+    <string name="exit">終了します</string>
+    <!--space-->
+    <string name="attack">攻撃力</string>
+    <string name="BULLET">弾数</string>
+    <string name="speed">スピード</string>
+</resources>

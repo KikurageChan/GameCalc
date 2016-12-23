@@ -1,0 +1,427 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/imageButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/grass"
+        android:gravity="center_vertical|left">
+
+        <ImageButton
+            android:id="@+id/settingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/cleanness"
+            android:onClick="setting"
+            android:src="@drawable/setting_style" />
+
+
+
+        <ImageButton
+            android:id="@+id/memoryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/cleanness"
+            android:onClick="memory"
+            android:src="@drawable/book_style" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/gameFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/cleanness"
+            android:onClick="startButton"
+            android:text="START"
+            android:textColor="@color/black"
+            android:textSize="32dp" />
+
+        <Button
+            android:id="@+id/overButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/cleanness"
+            android:onClick="overButton"
+            android:text="GAME  OVER"
+            android:textColor="@color/red"
+            android:textSize="32dp" />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textColor="@color/defaultText"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/operatorText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingRight="5dp"
+            android:text=""
+            android:gravity="top|right"
+            android:textSize="15sp" />
+
+
+    </FrameLayout>
+
+   <LinearLayout
+       android:id="@+id/gameAssistLayout"
+       android:layout_width="match_parent"
+       android:layout_height="15dp"
+       android:orientation="horizontal">
+       <!--<TextView-->
+           <!--android:id="@+id/drawColorText"-->
+           <!--android:layout_width="wrap_content"-->
+           <!--android:layout_height="match_parent"-->
+           <!--android:layout_marginLeft="10dp"-->
+           <!--android:layout_marginRight="5dp"-->
+           <!--android:textColor="@color/black"-->
+           <!--android:text="Color"-->
+           <!--android:gravity="bottom"-->
+           <!--android:textSize="10sp"/>-->
+       <!--<TextView-->
+           <!--android:id="@+id/drawColorSample"-->
+           <!--android:layout_width="wrap_content"-->
+           <!--android:layout_height="match_parent"-->
+           <!--android:gravity="bottom"-->
+           <!--android:text="●"-->
+           <!--android:textSize="10sp"-->
+           <!--android:textColor="@color/green"/>-->
+       <!--<TextView-->
+           <!--android:id="@+id/drawThicknessText"-->
+           <!--android:layout_width="wrap_content"-->
+           <!--android:layout_height="match_parent"-->
+           <!--android:layout_marginLeft="20dp"-->
+           <!--android:layout_marginRight="5dp"-->
+           <!--android:text="thickness"-->
+           <!--android:textColor="@color/black"-->
+           <!--android:gravity="bottom"-->
+           <!--android:textSize="10sp"/>-->
+       <!--<TextView-->
+           <!--android:id="@+id/drawThicknessSample"-->
+           <!--android:layout_width="wrap_content"-->
+           <!--android:layout_height="match_parent"-->
+           <!--android:gravity="bottom"-->
+           <!--android:text="12"-->
+           <!--android:textSize="10sp"-->
+           <!--android:textColor="@color/black"/>-->
+       <!--<TextView-->
+           <!--android:id="@+id/drawLineText"-->
+           <!--android:layout_width="wrap_content"-->
+           <!--android:layout_height="match_parent"-->
+           <!--android:layout_marginLeft="20dp"-->
+           <!--android:layout_marginRight="5dp"-->
+           <!--android:text="Line"-->
+           <!--android:textColor="@color/black"-->
+           <!--android:gravity="bottom"-->
+           <!--android:textSize="10sp"/>-->
+       <!--<ImageView-->
+           <!--android:id="@+id/drawLineSample"-->
+           <!--android:layout_width="wrap_content"-->
+           <!--android:layout_height="match_parent"-->
+           <!--android:scaleType="center"-->
+           <!--android:src="@drawable/dot_line"-->
+           <!--android:gravity="center_vertical"/>-->
+
+
+   </LinearLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/buttonTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#82d700"
+        android:gravity="center">
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:gravity="center">
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/button7"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="numberOn"
+                android:text="7"
+                android:textSize="30sp" />
+
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/button8"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="numberOn"
+                android:text="8"
+                android:textSize="30sp" />
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/button9"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="numberOn"
+                android:text="9"
+                android:textSize="30sp" />
+
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/buttonWaru"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="logic"
+                android:text="÷"
+                android:textSize="30sp" />
+
+
+        </TableRow>
+
+        <TableRow
+
+            android:gravity="center">
+
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/button4"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="numberOn"
+                android:text="4"
+                android:textSize="30sp" />
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/button5"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="numberOn"
+                android:text="5"
+                android:textSize="30sp" />
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/button6"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="numberOn"
+                android:text="6"
+                android:textSize="30sp" />
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/buttonKakeru"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="logic"
+                android:text="×"
+                android:textSize="30sp" />
+
+
+        </TableRow>
+
+
+        <TableRow
+
+            android:gravity="center">
+
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/button1"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="numberOn"
+                android:text="1"
+                android:textSize="30sp" />
+
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/button2"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="numberOn"
+                android:text="2"
+                android:textSize="30sp" />
+
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/button3"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="numberOn"
+                android:text="3"
+                android:textSize="30sp" />
+
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/buttonTasu"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="logic"
+                android:text="＋"
+                android:textSize="30sp" />
+
+
+        </TableRow>
+
+        <TableRow
+
+            android:gravity="center">
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/buttonDot"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="dot"
+                android:text="."
+                android:textSize="30sp" />
+
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/button0"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:onClick="numberOn"
+                android:textSize="30sp" />
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/buttonEqual"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:onClick="equal"
+                android:text="="
+                android:textSize="30sp" />
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/buttonHiku"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:text="−"
+                android:onClick="logic"
+                android:textSize="30sp" />
+
+
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/buttonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:text="C"
+                android:textSize="30sp" />
+
+            <myGameUtil.KikurageAndroidButton
+                android:id="@+id/buttonGame"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:text="GAME"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </TableLayout>
+
+
+</LinearLayout>
+
+
+

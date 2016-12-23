@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/settingOrColorFrame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/paintButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@color/black"
+            android:scaleType="center"
+            android:src="@drawable/painton" />
+
+        <ImageView
+            android:id="@+id/optionButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@color/darkGray"
+            android:scaleType="center"
+            android:src="@drawable/option" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuFrame"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/settingAdView"
+        android:layout_below="@+id/settingOrColorFrame"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/settingAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+</RelativeLayout>

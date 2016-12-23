@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:layout_above="@+id/adView2"
+    android:layout_below="@+id/settingOrColorFrame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="@string/main_color"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/mainColorSample"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/grass"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="R"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/mainColorR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="130" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="G"
+            android:textColor="@color/g"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/mainColorG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="215" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="B"
+            android:textColor="@color/b"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/mainColorB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="@string/screen_color"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/screenColorSample"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/grass"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="R"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/screenColorR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="130" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="G"
+            android:textColor="@color/g"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/screenColorG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="215" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="B"
+            android:textColor="@color/b"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/screenColorB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="@string/calculation_text_color"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/calculationTextColorSample"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/black"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="R"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/calculationTextColorR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="0" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="G"
+            android:textColor="@color/g"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/calculationTextColorG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="0" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="B"
+            android:textColor="@color/b"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/calculationTextColorB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="0" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="@string/button_color"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/buttonColorSample"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/button"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="R"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/buttonColorR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="223" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="G"
+            android:textColor="@color/g"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/buttonColorG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="223" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="B"
+            android:textColor="@color/b"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/buttonColorB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="223" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="@string/button_text_color"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/buttonTextColorSample"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/black"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="R"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/buttonTextColorR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="0" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="G"
+            android:textColor="@color/g"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/buttonTextColorG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="0" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="B"
+            android:textColor="@color/b"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/buttonTextColorB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:max="255"
+            android:progress="0" />
+    </LinearLayout>
+
+</LinearLayout>

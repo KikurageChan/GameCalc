@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawAssistFrame"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:background="@color/black"
+    android:layout_height="15dp">
+
+    <TextView
+        android:id="@+id/spaceAttackText"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/attack"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/spaceAttackLevel"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="|"
+        android:textColor="@color/red"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/spaceBulletText"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/BULLET"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/spaceBulletLevel"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="|"
+        android:textColor="@color/grass"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/spaceSpeedText"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/speed"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/speedLevel"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="|"
+        android:textColor="@color/down"
+        android:textSize="10sp" />
+
+</LinearLayout>

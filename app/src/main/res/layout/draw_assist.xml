@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawAssistFrame"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="15dp">
+
+    <TextView
+        android:id="@+id/drawColorText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="bottom"
+        android:text="Color"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/drawColorSample"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="●"
+        android:textColor="@color/green"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/drawThicknessText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:gravity="bottom"
+        android:text="thickness"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/drawThicknessSample"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="12"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/drawLineText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="bottom"
+        android:text="Line"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/drawLineSample"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:scaleType="center"
+        android:src="@drawable/dot_line" />
+
+</LinearLayout>
