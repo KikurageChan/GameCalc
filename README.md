@@ -33,3 +33,7 @@
 ### Hockey
 ![](https://github.com/KikurageChan/GameCalc/wiki/images/block_sample.png)
 > 左右のバーをスワイプで動かして、玉を相手のバーより後ろに飛ばそう！
+
+## その他
+ゲームは今後のアップデートで増やしていけたらいいなと思っています。  
+見て頂いてありがとうございます。
