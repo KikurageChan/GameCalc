@@ -34,6 +34,16 @@
 ![](https://github.com/KikurageChan/GameCalc/wiki/images/block_sample.png)
 > 左右のバーをスワイプで動かして、玉を相手のバーより後ろに飛ばそう！
 
+## 図鑑画面
+スコアなどの一覧はこの画面から見ることができます。  
+
+![](https://github.com/KikurageChan/GameCalc/wiki/images/memory.png)
+
+## 設定画面
+電卓のボタンの色やその周りの色、文字の色などの変更の他にサウンドのON/OFFなどを設定できます。
+
+![](https://github.com/KikurageChan/GameCalc/wiki/images/setting.png)
+
 ## その他
-ゲームは今後のアップデートで増やしていけたらいいなと思っています。  
+ゲームは今後のアップデートで増やして行きたいと思っています。  
 見て頂いてありがとうございます。
